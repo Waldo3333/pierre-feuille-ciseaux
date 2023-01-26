@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="regleContainer" id="displayRulesStandard">
+      <div class="regleStandard">
+        <button class="regleButton" id="rulesButtonStandard">
+          <img src="./images/icon-close.svg" alt="" />
+        </button>
+        <img src="./images/image-rules.svg" alt="" class="regleImg" />
+      </div>
+    </div>
+    <div class="regleContainer" id="displayRulesComplex">
+      <div class="regleStandard">
+        <button class="regleButton" id="rulesButtonComplex">
+          <img src="./images/icon-close.svg" alt="" />
+        </button>
+        <img src="./images/image-rules-bonus.svg" alt="" class="regleImg" />
+      </div>
+    </div>
+    <nav class="nav">
+      <div id="modeSelector">
+        <button class="modeButton">
+          <img src="./images/logo.svg" alt="" id="" />
+        </button>
+        <img
+          src="./images/27324.svg"
+          alt=""
+          style="filter: invert(100%); transform: rotate(-180deg); width: 100px"
+        />
+        <p style="color: white; margin-top: 40px">CHOOSE GAME MODE</p>
+        <img
+          src="./images/27324.svg"
+          alt=""
+          style="filter: invert(100%); width: 100px"
+        />
+        <button class="modeButton">
+          <img src="./images/logo-bonus.svg" alt="" id="" />
+        </button>
+      </div>
+
+      <div id="displayScore">
+        <div id="logoMode"></div>
+        <div class="score">
+          <div class="score--score">Score</div>
+          <div class="score--number" id="score">0</div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!---------------------------------------------------------------mode standard-->
+
+      <div class="modeStandard" id="modeStandard">
+        <button class="standard1 gameButton rockStandard" id="rock">
+          <img src="./images/icon-rock.svg" alt="" />
+        </button>
+        <button class="standard2 gameButton scissorsStandard" id="scissors">
+          <img src="./images/icon-scissors.svg" alt="" />
+        </button>
+        <button class="standard3 gameButton paperStandard" id="paper">
+          <img src="./images/icon-paper.svg" alt="" />
+        </button>
+      </div>
+      <!---------------------------------------------------------------mode complex-->
+
+      <div class="modeComplex" id="modeComplex">
+        <button class="complex4 gameButton rock" id="rock">
+          <img src="./images/icon-rock.svg" alt="" />
+        </button>
+        <button class="complex1 gameButton scissors" id="scissors">
+          <img src="./images/icon-scissors.svg" alt="" />
+        </button>
+        <button class="complex3 gameButton paper" id="paper">
+          <img src="./images/icon-paper.svg" alt="" />
+        </button>
+        <button class="complex5 gameButton lizard" id="lizard">
+          <img src="./images/icon-lizard.svg" alt="" />
+        </button>
+        <button class="complex2 gameButton spock" id="spock">
+          <img src="./images/icon-spock.svg" alt="" />
+        </button>
+      </div>
+      <!---------------------------------------------------------------affichage du résultat-->
+      <div id="displayResult">
+        <div id="youPicked" class="youPicked"></div>
+        <div id="winLoseTie"></div>
+        <div id="housePicked"></div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

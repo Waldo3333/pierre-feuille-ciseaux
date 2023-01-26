@@ -1,0 +1,269 @@
+body {
+  height: 100vh;
+  background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+nav {
+  width: 70vw;
+  height: 150px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: rgba(240, 248, 255, 0);
+}
+nav img {
+  height: 100px;
+}
+#modeSelector {
+  background-color: rgba(240, 248, 255, 0);
+  width: 70vw;
+  height: 150px;
+  display: flex;
+
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+.modeButton {
+  border: none;
+  background-color: rgba(245, 245, 220, 0);
+}
+
+#displayScore {
+  display: none;
+  width: 70vw;
+  height: 150px;
+  margin: auto;
+  margin-top: 0px;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score {
+  background-color: white;
+  border-radius: 10px;
+  width: 180px;
+  height: 130px;
+  text-align: center;
+}
+
+.score--score {
+  color: hsl(229, 64%, 46%);
+  margin-top: 8px;
+}
+
+.score--number {
+  color: hsl(229, 25%, 31%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+main {
+  width: 50vw;
+  height: 500px;
+  margin: auto;
+}
+
+#modeStandard {
+  display: none;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: url(./images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.regleContainer {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.288);
+}
+.regleStandard {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 13em;
+  justify-content: center;
+  width: 50vw;
+  height: 55vh;
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.regleImg {
+  margin: auto;
+  height: 40vh;
+}
+
+.regleButton {
+  margin-top: 10px;
+  background: none;
+  margin-left: 10px;
+  height: 10px;
+  width: 20px;
+  border: none;
+}
+.standard1 {
+  grid-area: 2 / 4 / 4 / 6;
+}
+.standard2 {
+  grid-area: 2 / 8 / 4 / 10;
+}
+.standard3 {
+  grid-area: 5 / 6 / 7 / 8;
+}
+
+#modeComplex {
+  display: none;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  margin-left: -100px;
+  background-image: url(./images/bg-pentagon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+}
+.regleComplex {
+  display: none;
+}
+.complex1 {
+  grid-area: 1 / 6 / 4 / 8;
+}
+.complex2 {
+  grid-area: 4 / 4 / 7 / 6;
+}
+.complex3 {
+  grid-area: 4 / 8 / 7 / 10;
+}
+.complex4 {
+  grid-area: 8 / 7 / 11 / 9;
+}
+.complex5 {
+  grid-area: 8 / 5 / 11 / 7;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(95%);
+}
+
+.gameButton {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.rock {
+  border: 20px solid red;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.rockStandard {
+  border: 20px solid red;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+}
+.scissors {
+  border: 20px solid yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.scissorsStandard {
+  border: 20px solid yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+}
+.paper {
+  border: 20px solid rgb(167, 3, 167);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -20px;
+}
+.paperStandard {
+  border: 20px solid rgb(167, 3, 167);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+}
+.lizard {
+  border: 20px solid purple;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.lizardStandard {
+  border: 20px solid purple;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+}
+.spock {
+  border: 20px solid cyan;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -20px;
+}
+.spockStandard {
+  border: 20px solid cyan;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.youPicked {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#youPicked img {
+}
+
+#displayResult {
+  display: none;
+
+  margin: auto;
+  padding-top: 130px;
+  justify-content: space-around;
+}
+#displayResult p {
+  color: white;
+}
+
+.buttonRestart {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  width: 100px;
+  height: 30px;
+}
