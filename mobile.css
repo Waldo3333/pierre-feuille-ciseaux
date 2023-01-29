@@ -42,28 +42,45 @@
   .modeButton {
     border: none;
     background-color: rgba(245, 245, 220, 0);
-    margin-top: -42px;
   }
-  .chooseGameMode {
-    position: absolute;
-    color: white;
-    margin-top: 9px;
-    margin-left: 6px;
-    margin-right: 10px;
-    left: 168px;
-    width: 70px;
+  #modeSelector {
+    background-color: rgba(240, 248, 255, 0);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 160px auto;
+  }
+  .modeJeuBouton {
+    width: 130px;
   }
   .flecheGauche {
-    position: absolute;
-    left: 145px;
-    width: 20px;
+    position: relative;
+    filter: invert(100%);
+    transform: rotate(-45deg);
+    width: 40px;
+    left: -118px;
+    margin: auto;
+    bottom: 28px;
   }
 
   .flecheDroite {
-    position: absolute;
-    width: 20px;
-    left: 215px;
+    position: relative;
+    filter: invert(100%);
+    width: 40px;
+    transform: rotate(45deg);
+    left: -115px;
+    bottom: -30px;
+    margin: auto;
   }
+
+  .chooseGameMode {
+    position: relative;
+    color: white;
+    left: -90px;
+    margin-top: 40px;
+    margin: auto;
+  }
+
   /*------------------------------------------------------------------------------------------------affichage des regles */
 
   .regleStandard {

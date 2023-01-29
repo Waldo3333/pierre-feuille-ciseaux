@@ -17,6 +17,7 @@ const whatRules = document.getElementById("displayRulesStandard");
 const displayScore = document.getElementById("displayScore");
 const resultContainer = document.getElementById("displayResult");
 const rulesButton = document.getElementById("rulesShow");
+const navScore = document.getElementById("navScore");
 
 // Init score
 
@@ -38,6 +39,7 @@ function chooseMode(i) {
     displayScore.style.display = "flex";
     rulesButton.style.display = "block";
     rules.style.display = "flex";
+    navScore.style.display = "flex";
     modeJeu = "standard";
     modeLogo.innerHTML = '<img src="./images/logo.svg" alt="" />';
   } else {
@@ -46,6 +48,7 @@ function chooseMode(i) {
     displayScore.style.display = "flex";
     rulesTwo.style.display = "flex";
     rulesButton.style.display = "block";
+    navScore.style.display = "flex";
     modeJeu = "complex";
     modeLogo.innerHTML = ' <img src="./images/logo-bonus.svg" alt="" id="" />';
   }
