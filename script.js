@@ -167,7 +167,9 @@ function playAgain() {
 rulesButton.addEventListener("click", function () {
   if (modeJeu === "standard") {
     rules.style.display = "flex";
+    rulesButton.style.display = "none";
   } else if (modeJeu === "complex") {
     rulesTwo.style.display = "flex";
+    rulesButton.style.display = "none";
   }
 });
