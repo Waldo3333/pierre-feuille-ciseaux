@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
   </head>
   <body>
     <div class="regleContainer" id="displayRulesStandard">
@@ -35,17 +36,9 @@
         <button class="modeButton">
           <img src="./images/logo.svg" alt="" id="" />
         </button>
-        <img
-          src="./images/27324.svg"
-          alt=""
-          style="filter: invert(100%); transform: rotate(-180deg); width: 100px"
-        />
-        <p style="color: white; margin-top: 40px">CHOOSE GAME MODE</p>
-        <img
-          src="./images/27324.svg"
-          alt=""
-          style="filter: invert(100%); width: 100px"
-        />
+        <img src="./images/27324.svg" alt="" class="flecheGauche" />
+        <p class="chooseGameMode">CHOOSE GAME MODE</p>
+        <img src="./images/27324.svg" alt="" class="flecheDroite" />
         <button class="modeButton">
           <img src="./images/logo-bonus.svg" alt="" id="" />
         </button>
@@ -95,9 +88,19 @@
       </div>
       <!---------------------------------------------------------------affichage du résultat-->
       <div id="displayResult">
-        <div id="youPicked" class="youPicked"></div>
+        <div class="result">
+          <p class="userPick">You picked</p>
+          <div class="img--result--container result--user--mobile">
+            <div id="youPicked" class="logoResult"></div>
+          </div>
+        </div>
         <div id="winLoseTie"></div>
-        <div id="housePicked"></div>
+        <div class="result">
+          <p class="housePick">The house picked</p>
+          <div class="img--result--container result--ia--mobile">
+            <div id="housePicked" class="logoResult"></div>
+          </div>
+        </div>
       </div>
     </main>
 

@@ -1,2 +1,237 @@
 @media (max-width: 900px) {
-} ;
+  body {
+    width: 375px;
+  }
+  main {
+    width: 375px;
+    height: 500px;
+  }
+  /*------------------------------------------------------------------------------------------------nav en haut */
+  .nav {
+    width: 350px;
+    height: 100px;
+  }
+  nav img {
+    height: 70px;
+  }
+
+  #displayScore {
+    display: none;
+    width: 70vw;
+    height: 100px;
+  }
+  .score {
+    width: 80px;
+    height: 80px;
+  }
+
+  .score--number {
+    font-size: 40px;
+  }
+
+  #modeSelector {
+    background-color: rgba(240, 248, 255, 0);
+    width: 70vw;
+    height: 150px;
+    display: flex;
+
+    border-radius: 20px;
+    justify-content: space-around;
+  }
+
+  .modeButton {
+    border: none;
+    background-color: rgba(245, 245, 220, 0);
+    margin-top: -42px;
+  }
+  .chooseGameMode {
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .flecheGauche {
+    width: 20px;
+  }
+
+  .flecheDroite {
+    width: 20px;
+  }
+  /*------------------------------------------------------------------------------------------------affichage des regles */
+
+  .regleStandard {
+    margin: 10px;
+    margin-top: 13em;
+
+    width: 100vw;
+  }
+  /*------------------------------------------------------------------------------------------------affichage du jeu */
+
+  #modeStandard {
+    display: none;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    margin-top: 20px;
+  }
+  .standard1 {
+    grid-area: 2 / 4 / 4 / 6;
+  }
+  .standard2 {
+    grid-area: 2 / 8 / 4 / 10;
+  }
+  .standard3 {
+    grid-area: 5 / 6 / 7 / 8;
+  }
+  #modeComplex {
+    display: none;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    margin-left: -100px;
+    background-image: url(./images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 30px;
+    margin-right: -110px;
+  }
+  .gameButton {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .rock {
+    border: 10px solid red;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .rockStandard {
+    border: 10px solid red;
+    width: 110px;
+    height: 110px;
+
+    margin-top: -20px;
+  }
+  .scissors {
+    border: 10px solid rgb(221, 221, 51);
+    width: 110px;
+    height: 110px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .scissorsStandard {
+    border: 10px solid rgb(221, 221, 51);
+    width: 110px;
+    height: 110px;
+    margin-top: -20px;
+  }
+  .paper {
+    border: 10px solid rgb(167, 3, 167);
+    width: 110px;
+    height: 110px;
+    margin-top: -20px;
+  }
+  .paperStandard {
+    border: 10px solid rgb(167, 3, 167);
+    width: 110px;
+    height: 110px;
+  }
+  .lizard {
+    border: 10px solid purple;
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+
+  .lizardStandard {
+    border: 10px solid purple;
+    width: 110px;
+    height: 110px;
+  }
+  .spock {
+    border: 10px solid cyan;
+    width: 110px;
+    height: 110px;
+    margin-top: -20px;
+  }
+  .spockStandard {
+    border: 10px solid cyan;
+    width: 110px;
+    height: 110px;
+  }
+  /*------------------------------------------------------------------------------------------------affichage des resultats */
+
+  .result {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img--result--container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 20px solid rgb(50, 50, 98);
+  }
+
+  .logoResult {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .logoResult--img {
+    width: 70px;
+    margin: auto;
+  }
+
+  #winLoseTie {
+    margin-top: 250px;
+  }
+  #displayResult {
+    display: none;
+
+    margin: auto;
+    padding-top: 70px;
+    justify-content: space-around;
+  }
+  #displayResult p {
+    color: white;
+    text-align: center;
+  }
+  .result--user--mobile {
+    position: absolute;
+    margin-top: 67px;
+    margin-left: 0px;
+  }
+
+  .result--ia--mobile {
+    position: absolute;
+    margin-top: 67px;
+    margin-left: -130px;
+  }
+
+  .resultText {
+    font-size: 40px;
+  }
+
+  .userPick {
+    position: absolute;
+    left: 70px;
+  }
+  .housePick {
+    position: absolute;
+    left: 225px;
+  }
+  .buttonRestart {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    width: 150px;
+    height: 70px;
+    border-radius: 1em;
+    border: none;
+  }
+}

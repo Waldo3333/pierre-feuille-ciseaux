@@ -27,6 +27,21 @@ nav img {
   border-radius: 20px;
   justify-content: space-around;
 }
+.flecheGauche {
+  filter: invert(100%);
+  transform: rotate(-180deg);
+  width: 100px;
+}
+
+.flecheDroite {
+  filter: invert(100%);
+  width: 100px;
+}
+
+.chooseGameMode {
+  color: white;
+  margin-top: 40px;
+}
 
 .modeButton {
   border: none;
@@ -125,7 +140,7 @@ main {
   display: none;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  margin-left: -100px;
+  margin-left: 0px;
   background-image: url(./images/bg-pentagon.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -181,7 +196,7 @@ button:hover {
   background-color: white;
 }
 .scissors {
-  border: 20px solid yellow;
+  border: 20px solid rgb(221, 221, 51);
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -190,7 +205,7 @@ button:hover {
   margin-left: 10px;
 }
 .scissorsStandard {
-  border: 20px solid yellow;
+  border: 20px solid rgb(221, 221, 51);
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -220,6 +235,7 @@ button:hover {
   margin-right: 20px;
   margin-top: 40px;
 }
+
 .lizardStandard {
   border: 20px solid purple;
   width: 150px;
@@ -243,12 +259,28 @@ button:hover {
   background-color: white;
 }
 
-.youPicked {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.result {
+  display: flex;
+  flex-direction: column;
 }
-#youPicked img {
+
+.img--result--container {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  border: 20px solid rgb(50, 50, 98);
+}
+
+.logoResult {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+}
+.logoResult--img {
+  width: 70px;
+  margin: auto;
 }
 
 #displayResult {
@@ -260,10 +292,13 @@ button:hover {
 }
 #displayResult p {
   color: white;
+  text-align: center;
 }
 
 .buttonRestart {
   font-family: "Barlow Semi Condensed", sans-serif;
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 70px;
+  border-radius: 1em;
+  border: none;
 }
