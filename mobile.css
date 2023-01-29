@@ -45,17 +45,24 @@
     margin-top: -42px;
   }
   .chooseGameMode {
+    position: absolute;
     color: white;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 9px;
+    margin-left: 6px;
     margin-right: 10px;
+    left: 168px;
+    width: 70px;
   }
   .flecheGauche {
+    position: absolute;
+    left: 145px;
     width: 20px;
   }
 
   .flecheDroite {
+    position: absolute;
     width: 20px;
+    left: 215px;
   }
   /*------------------------------------------------------------------------------------------------affichage des regles */
 
@@ -64,6 +71,31 @@
     margin-top: 13em;
 
     width: 100vw;
+  }
+  .regleButton {
+    margin-top: 18px;
+    background: none;
+    margin-left: 22px;
+    height: 22px;
+    width: 30px;
+    border: none;
+  }
+
+  #rulesShow {
+    display: none;
+    position: absolute;
+    left: 120px;
+    bottom: 85px;
+    width: 130px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 600;
   }
   /*------------------------------------------------------------------------------------------------affichage du jeu */
 

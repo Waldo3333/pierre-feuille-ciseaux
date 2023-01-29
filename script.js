@@ -16,6 +16,7 @@ const rulesTwo = document.getElementById("displayRulesComplex");
 const whatRules = document.getElementById("displayRulesStandard");
 const displayScore = document.getElementById("displayScore");
 const resultContainer = document.getElementById("displayResult");
+const rulesButton = document.getElementById("rulesShow");
 
 // Init score
 
@@ -35,6 +36,7 @@ function chooseMode(i) {
     modeStandard.style.display = "grid";
     modeSelector.style.display = "none";
     displayScore.style.display = "flex";
+    rulesButton.style.display = "block";
     rules.style.display = "flex";
     modeJeu = "standard";
     modeLogo.innerHTML = '<img src="./images/logo.svg" alt="" />';
@@ -43,6 +45,7 @@ function chooseMode(i) {
     modeSelector.style.display = "none";
     displayScore.style.display = "flex";
     rulesTwo.style.display = "flex";
+    rulesButton.style.display = "block";
     modeJeu = "complex";
     modeLogo.innerHTML = ' <img src="./images/logo-bonus.svg" alt="" id="" />';
   }
@@ -96,6 +99,8 @@ function doesUserWon(a, b) {
 function displayResult(resultMsg) {
   modeStandard.style.display = "none";
   modeComplex.style.display = "none";
+  console.log("foeun");
+  rulesButton.style.display = "none";
 
   displayScore.style.display = "flex";
   resultContainer.style.display = "flex";
@@ -129,6 +134,7 @@ function getUserInput() {
   for (let i = 0; i < getUserInput.length; i++) {
     getUserInput[i].addEventListener("click", function () {
       userInput = this.id;
+
       getInputID(this);
       getIAInput();
       userResult.innerHTML = ` <img src="./images/icon-${this.id}.svg" alt="" class="logoResult--img" />`;
@@ -145,8 +151,20 @@ function playAgain() {
   if (modeJeu === "standard") {
     modeStandard.style.display = "grid";
     resultContainer.style.display = "none";
+    rulesButton.style.display = "block";
   } else if (modeJeu === "complex") {
     modeComplex.style.display = "grid";
     resultContainer.style.display = "none";
+    rulesButton.style.display = "block";
   }
 }
+
+// ------------------------------------------------------------------ afficher les regles via bouton
+
+rulesButton.addEventListener("click", function () {
+  if (modeJeu === "standard") {
+    rules.style.display = "flex";
+  } else if (modeJeu === "complex") {
+    rulesTwo.style.display = "flex";
+  }
+});

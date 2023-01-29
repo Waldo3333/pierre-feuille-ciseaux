@@ -28,19 +28,25 @@ nav img {
   justify-content: space-around;
 }
 .flecheGauche {
+  position: relative;
   filter: invert(100%);
   transform: rotate(-180deg);
   width: 100px;
+  left: -55px;
 }
 
 .flecheDroite {
   filter: invert(100%);
   width: 100px;
+  position: relative;
+  left: -50px;
 }
 
 .chooseGameMode {
   color: white;
   margin-top: 40px;
+  position: relative;
+  left: -55px;
 }
 
 .modeButton {
@@ -118,6 +124,29 @@ main {
   height: 40vh;
 }
 
+#rulesShow {
+  display: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 130px;
+  height: 40px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: ease-out 0.1s;
+}
+
+#rulesShow:hover {
+  background-color: white;
+  color: hsl(237, 49%, 15%);
+}
+
 .regleButton {
   margin-top: 10px;
   background: none;
@@ -167,6 +196,7 @@ main {
 
 button {
   cursor: pointer;
+  transition: ease-out 0.1s;
 }
 
 button:hover {
@@ -187,6 +217,7 @@ button:hover {
   background-color: white;
   margin-left: 20px;
   margin-top: 40px;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 .rockStandard {
   border: 20px solid red;
@@ -194,6 +225,7 @@ button:hover {
   height: 150px;
   border-radius: 50%;
   background-color: white;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 .scissors {
   border: 20px solid rgb(221, 221, 51);
@@ -203,6 +235,7 @@ button:hover {
   background-color: white;
   margin-top: 20px;
   margin-left: 10px;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 .scissorsStandard {
   border: 20px solid rgb(221, 221, 51);
@@ -210,6 +243,7 @@ button:hover {
   height: 150px;
   border-radius: 50%;
   background-color: white;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 .paper {
   border: 20px solid rgb(167, 3, 167);
@@ -218,6 +252,7 @@ button:hover {
   border-radius: 50%;
   background-color: white;
   margin-top: -20px;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 .paperStandard {
   border: 20px solid rgb(167, 3, 167);
@@ -225,6 +260,7 @@ button:hover {
   height: 150px;
   border-radius: 50%;
   background-color: white;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 .lizard {
   border: 20px solid purple;
@@ -234,6 +270,7 @@ button:hover {
   background-color: white;
   margin-right: 20px;
   margin-top: 40px;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 
 .lizardStandard {
@@ -242,6 +279,7 @@ button:hover {
   height: 150px;
   border-radius: 50%;
   background-color: white;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 .spock {
   border: 20px solid cyan;
@@ -250,6 +288,7 @@ button:hover {
   border-radius: 50%;
   background-color: white;
   margin-top: -20px;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 .spockStandard {
   border: 20px solid cyan;
@@ -257,6 +296,7 @@ button:hover {
   height: 150px;
   border-radius: 50%;
   background-color: white;
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 
 .result {
@@ -270,6 +310,7 @@ button:hover {
   border-radius: 50%;
   background-color: aliceblue;
   border: 20px solid rgb(50, 50, 98);
+  box-shadow: 0px 10px 10px 1px rgba(35, 25, 25, 0.601) inset;
 }
 
 .logoResult {
@@ -301,4 +342,9 @@ button:hover {
   height: 70px;
   border-radius: 1em;
   border: none;
+}
+.buttonRestart:hover {
+  color: white;
+  background-color: hsla(238, 48%, 15%, 0);
+  border: 2px solid white;
 }
